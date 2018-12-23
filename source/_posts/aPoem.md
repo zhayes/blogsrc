@@ -3,7 +3,7 @@ title: 抄一首诗
 date: 2018-09-18 00:30:11
 tags: 文学
 ---
-![](https://images.unsplash.com/photo-1507381081958-916f127e0491?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=202e85339fa488793019793f8a450814&auto=format&fit=crop&w=1200&q=40)
+![](https://images.unsplash.com/photo-1507381081958-916f127e0491?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=202e85339fa488793019793f8a450814&auto=format&fit=crop&w=1200&q=10)
 <!-- more -->
 <center>
 只要再克制一下，我就会解脱
@@ -27,4 +27,4 @@ tags: 文学
 ———— 拜伦《只要再克制一下》
 </center>
 
-![](https://images.unsplash.com/photo-1484781731938-20384a8a6960?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dc8b5bb6eed4b0e7c516cf71087e48c4&auto=format&fit=crop&w=1200&q=40)
+![](https://images.unsplash.com/photo-1484781731938-20384a8a6960?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dc8b5bb6eed4b0e7c516cf71087e48c4&auto=format&fit=crop&w=1200&q=10)

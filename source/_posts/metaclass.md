@@ -1,6 +1,6 @@
 ---
 title: 深刻理解Python中的元类(metaclass)（转）
-date: 2019-01-01 32:31:43
+date: 2019-01-01 23:31:43
 tags: Python
 ---
 ![](https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=20)

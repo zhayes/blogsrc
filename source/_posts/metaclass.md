@@ -651,13 +651,13 @@ print guy.age
 
 ```python
 class Foo(object): pass
-    id(Foo)
+id(Foo)
 ```
 142630324
 
 ```python
 class Foo(object): pass
-    id(Foo)
+id(Foo)
 ```
 142630324
 

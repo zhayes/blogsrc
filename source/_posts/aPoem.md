@@ -1,7 +1,7 @@
 ---
 title: 抄一首诗
 date: 2018-09-18 00:30:11
-tags: 文学
+category: 文学
 ---
 ![](https://images.unsplash.com/photo-1507381081958-916f127e0491?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=202e85339fa488793019793f8a450814&auto=format&fit=crop&w=1200&q=10)
 <!-- more -->

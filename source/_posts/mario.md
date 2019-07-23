@@ -1,7 +1,8 @@
 ---
 title: web版极简马里奥游戏
 date: 2018-12-04 12:45:31
-tags: 游戏
+category: 游戏
+tags: javascript
 ---
 ![](https://images.unsplash.com/photo-1533466336236-65dade144046?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=40)
 <!-- more -->

@@ -1,7 +1,8 @@
 ---
 title: Python内置函数zip
 date: 2018-12-11 20:17:48
-tags: Python
+category: 后台
+tags: python
 ---
 ![](https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=40)
 python内置函数里有一个zip方法。第一次看起来有点不懂，于是查了下资料，找到一篇不错的文章，便想记录分享一下。[原文出处链接点这里](http://www.cnblogs.com/frydsh/archive/2012/07/10/2585370.html)。此外我再补充个[栈溢出上的问题讨论地址](https://stackoverflow.com/questions/13704860/zip-lists-in-python)。

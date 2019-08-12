@@ -6,7 +6,7 @@
     "version": "3.7.1"
   },
   "scripts": {
-    "start": "heox s",
+    "start": "hexo s",
     "deploy": "hexo deploy -g"
   },
   "dependencies": {

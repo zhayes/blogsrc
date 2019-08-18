@@ -9,6 +9,7 @@ tags: python
 <!-- more -->
 
 python内置函数里有一个zip方法。第一次看起来有点不懂，于是查了下资料，找到一篇不错的文章，便想记录分享一下。[原文出处链接点这里](http://www.cnblogs.com/frydsh/archive/2012/07/10/2585370.html)。此外我再补充个[栈溢出上的问题讨论地址](https://stackoverflow.com/questions/13704860/zip-lists-in-python)。
+
 ------
 
 zip函数接受任意多个（包括0个和1个）序列作为参数，返回一个tuple列表。具体意思不好用文字来表述，直接看示例：

@@ -93,3 +93,5 @@ deploy:
   type: git
   repo: https://github.com/zhayes/zhayes.github.io.git
   branch: master
+
+mathjax: tru

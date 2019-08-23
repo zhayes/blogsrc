@@ -6,6 +6,8 @@ tags: 概率
 mathjax: true
 ---
 
+![](https://images.unsplash.com/photo-1515560570411-00a0026e6086?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=10)
+
 转载自：[伤神的博客——概率学系列 二：深入浅出 - 加法和乘法原理以及排列和组合的定义](https://www.shangyang.me/2019/03/19/math-probability-02-premutation-and-combination/)
 
 

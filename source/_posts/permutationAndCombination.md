@@ -1,7 +1,7 @@
 ---
 title: 概率中加法和乘法原理以及排列和组合的定义
 date: 2019-08-23 09:44:31
-category: 游戏
+category: 数学
 tags: 概率
 mathjax: true
 ---

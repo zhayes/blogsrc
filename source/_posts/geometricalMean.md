@@ -5,7 +5,7 @@ category: 数学
 tags: 几何平均数
 description: 
 ---
-![](https://images.unsplash.com/photo-1519903106417-330f62fd90c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1924&q=80)
+![](https://images.unsplash.com/photo-1519903106417-330f62fd90c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1924&q=10)
 
 原文链接：https://www.mathsisfun.com/numbers/geometric-mean.html
 

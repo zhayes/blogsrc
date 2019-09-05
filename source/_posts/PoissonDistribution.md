@@ -1,5 +1,5 @@
 ---
-title: Possion Distribution
+title: Poisson Distribution
 date: 2019-9-01 19:33:31
 category: 数学
 tags: 泊松分布

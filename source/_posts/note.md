@@ -95,4 +95,44 @@ eg:直接到gitlab/github删除了某个分支，我在本地使用git branch -a
 5.验证 git branch -a
 
   此时可以看到本地远程分支记录已经和远程仓库保持一致了。
+
+6.修改当前最新未提交的commit
+  git commit --amend
+
+7.修改过往的commit
+  git rebase -i commitId
+  其中中，-i 的参数是不需要合并的 commit 的 hash 值
+
+8.回滚指定文件
+    暂定此文件为a.jsp
+
+    1.首先到a.jsp所在目录：
+    通过 git  log a.jsp
+    查看a.jsp的更改记录
+
+    2.找到想要回退的版本号：例如 fcd2093
+    通过 git reset  fcd2093 a.jsp
+    把文件回退
+
+    3.提交本次回退
+    git commit -m "注释内容"
+
+    4.切回目录
+    git checkout a.jsp
+
+    5.提交到远程仓库
+    git push origin master
+
 ```
+
+#### 解决 canvas 将图片转为base64报错: Uncaught DOMException: Failed to execute 'toDataURL' 
+
+问题描述
+当用户点击分享按钮时，生成一张海报，可以保存图片分享到朋友圈，用户的图片是存储在阿里云的OSS,当海报完成后，执行.canvas.toDataURL("image/png")时，出现index.html:28 Uncaught DOMException: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported的错误提示，这句话的翻译是uncaught domexception:未能对“htmlcanvaselement”执行“todataurl”：无法导出受污染的画布。因为图片跨域了，对画布造成了污染。
+
+解决方法
+搜索相关问题，大多是为img设置crossOrigin属性，实现图片允许跨域，即：img.setAttribute("crossOrigin",'Anonymous')，我为图片添加这个属性后，图片无法显示了，报了一个错误:  Access to image at 'https://claystar.oss-cn-shenzhen.aliyuncs.com/pic/9dd6d55c5c7334d9448c4628e6ff69f6.jpg' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.        
+
+通过和同事沟通讨论得知，只需要为图片添加一个时间戳即可。最后解决方式：                                         
+
+img.src='http://www.xxxx.png' + '?time=' + new Date()

@@ -184,3 +184,114 @@ js的`instance of`方法主要是判断一个对象是不是某个指定构造�
         }
     }
 ```
+---
+
+reduce方法实现
+
+```javascript
+
+    Array.prototype.reduce = function(fn, initialVal){
+        var arr = this;
+        var pre = initialVal ? initialVal : arr[0];
+        var index = initialVal ? 0 : 1;
+
+        for(var i=index; i<arr.length; i++){
+            pre = fn(pre, arr[i], i, arr);
+        }
+
+        return pre;
+    }
+
+```
+---
+
+debounce方法实现
+
+```javascript
+    function debounce(fn, time){
+        var timer = null;
+        return function(){
+            var that = this;
+            var args = arguments
+            clearTimeout(timer);
+            timer = seTimeout(function(){
+                fn.apply(that, args)
+            }, time);
+        }
+
+    }
+```
+---
+
+throttle方法实现
+```javascript
+    function throttle(fn, time){
+        var freeze = false;
+        return function(){
+            if(freeze) return;
+
+            var that = this;
+            var args = arguments;
+
+            freeze = true;
+
+            setTimeout(function(){
+                fn.apply(that, args);
+                freeze = false;
+            }, time)
+        }
+    }
+```
+---
+
+冒泡排序
+```javascript
+var list = [1,2,3,4,5,6,4,3,2,1];
+
+
+function bubbleSort(list){
+    
+    var len = list;
+
+    for(var i=0; i<list.length; i++){
+
+        for(var j=i; j<list.length; j++){
+            var l = list[i];
+            var r = list[j];
+            var temp = l;
+
+            if(r<l){
+                list[i] = r;
+                list[j] = temp;
+            }
+        }
+    }
+
+    return list;
+}
+
+bubbleSort(list)
+
+```
+---
+
+快速排序
+```javascript
+    function quickSort(arr){
+        if(arr.length <= 1){ return arr; };
+        var middleIndex = Math.floor(arr.length/2);
+        var item = arr.splice(middleIndex, 1)[0];
+        var leftArr = [];
+        var rightArr = [];
+        for(var i=0; i<arr.length; i++){
+            var obj = arr[i];
+            if(obj<item){
+                leftArr.push(obj);
+            }else{
+                rightArr.push(obj);
+            }
+        }
+
+        return quickSort(leftArr).concat(item, quickSort(rightArr));
+    }
+```

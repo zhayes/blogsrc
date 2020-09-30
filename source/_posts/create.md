@@ -295,3 +295,51 @@ bubbleSort(list)
         return quickSort(leftArr).concat(item, quickSort(rightArr));
     }
 ```
+
+---
+实现一个请求可以控制最大并行请求数量
+```javascript
+    class GlobalRequest {
+        constructor(maxConcurrency) {
+            this.maxConcurrency = maxConcurrency;
+        }
+
+        list = []
+
+        emit(){
+            const fn = this.list.splice(0, 1)[0];
+            fn && fn();
+        }
+        
+        get(url){
+            return new Promise((resolve, reject)=>{
+                this.list.push(()=>{
+                    var xhr= new XMLHttpRequest(),
+                        method = "get";
+
+                    xhr.open(method, url, true);
+                    xhr.onreadystatechange = ()=>{
+                        if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                            this.emit();
+                            resolve(xhr);
+                        }
+                    }
+                    xhr.send();
+                });
+
+                
+
+                if(this.list.length===1){
+                    setTimeout(()=>{
+                        const fns = this.list.splice(0, this.maxConcurrency);
+                        fns.forEach((fn)=>{
+                            fn()
+                        })
+                    }, 0)
+                }
+            })
+        }
+    }
+
+    const r = new GlobalRequest(2);
+```

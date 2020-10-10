@@ -305,37 +305,31 @@ bubbleSort(list)
         }
 
         list = []
-
-        emit(){
-            const fn = this.list.splice(0, 1)[0];
-            fn && fn();
-        }
         
         get(url){
             return new Promise((resolve, reject)=>{
-                this.list.push(()=>{
+                const p = ()=>{
                     var xhr= new XMLHttpRequest(),
                         method = "get";
 
                     xhr.open(method, url, true);
                     xhr.onreadystatechange = ()=>{
                         if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                            this.emit();
+                            const i = this.list.indexOf(p);
+                            const fn = this.list.splice(i, 1)[0];
+                            fn && fn();
                             resolve(xhr);
                         }
                     }
                     xhr.send();
-                });
+                }
+
+                this.list.push(p);
 
                 
 
-                if(this.list.length===1){
-                    setTimeout(()=>{
-                        const fns = this.list.splice(0, this.maxConcurrency);
-                        fns.forEach((fn)=>{
-                            fn()
-                        })
-                    }, 0)
+                if(this.list.length<=this.maxConcurrency){
+                    p();
                 }
             })
         }

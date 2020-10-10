@@ -337,3 +337,48 @@ bubbleSort(list)
 
     const r = new GlobalRequest(2);
 ```
+
+---
+实现一个 Events 模块，可以实现自定义事件的订阅、触发、移除功能。
+
+```javascript
+    class EEvent {
+        events = {}
+        
+        once(eventName, fn){
+           if(!this.events[eventName]){
+                this.events[eventName] = [];
+            }
+            
+            this.events[eventName].push({func: fn, isOnce: true});
+        }
+
+        fire(eventName){//触发事件
+            if(!this.events[eventName]) return;
+
+            this.events[eventName] = this.events[eventName].filter((item)=>{
+                item.func && item.func();
+                return !item.isOnce;
+            }) 
+        }
+        on(eventName, fn){//注册事件
+            if(!this.events[eventName]){
+                this.events[eventName] = [];
+            }
+            
+            this.events[eventName].push({func: fn, isOnce: false});
+        }
+        off(eventName, fn){//移除事件
+            if(this.events[eventName] && !fn){
+                delete this.events[eventName]
+            }
+
+            if(this.events[eventName] && fn){
+                this.events[eventName] = this.events[eventName].filter((f)=>{
+                    return f.func!=fn;
+                })
+            }
+        }
+    }
+
+```

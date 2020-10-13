@@ -301,37 +301,46 @@ bubbleSort(list)
 ```javascript
     class GlobalRequest {
         constructor(maxConcurrency) {
-            this.maxConcurrency = maxConcurrency;
+            this.max = maxConcurrency;
         }
 
-        list = []
-        
-        get(url){
-            return new Promise((resolve, reject)=>{
-                const p = ()=>{
-                    var xhr= new XMLHttpRequest(),
-                        method = "get";
+        requestList = [];
 
-                    xhr.open(method, url, true);
-                    xhr.onreadystatechange = ()=>{
-                        if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                            const i = this.list.indexOf(p);
-                            const fn = this.list.splice(i, 1)[0];
-                            fn && fn();
-                            resolve(xhr);
-                        }
-                    }
-                    xhr.send();
+        runNextTask() {
+            for (let i = 0; i < this.requestList.length; i++) {
+            const request = this.requestList[i];
+            if (request.wait) {
+                //找到下一个待执行任务
+                request.wait = false;
+                request.fn();
+                break;
+            }
+            }
+        }
+
+        get(url) {
+            return new Promise((resolve, reject) => {
+            const p = {
+                wait: true,
+                fn: () => {
+                window.fetch(url).then((data) => {
+                    const i = this.requestList.indexOf(p);
+                    //找到当前执行完的任务，将其从队列删除；
+                    this.requestList.splice(i, 1);
+                    //再执行下一个待执行任务
+                    this.runNextTask();
+                    resolve(data);
+                });
                 }
+            };
 
-                this.list.push(p);
+            this.requestList.push(p);
 
-                
-
-                if(this.list.length<=this.maxConcurrency){
-                    p();
-                }
-            })
+            if (this.requestList.length <= this.max) {
+                p.wait = false;
+                p.fn();
+            }
+            });
         }
     }
 

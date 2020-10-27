@@ -3,9 +3,8 @@ title: 几何平均数
 date: 2019-08-18 12:48:56
 category: 数学
 tags: 几何平均数
-description: 
+description: The Geometric Mean is a special type of average where we multiply the numbers together and then take a square root (for two numbers), cube root (for three numbers) etc.
 ---
-![](https://images.unsplash.com/photo-1519903106417-330f62fd90c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1924&q=10)
 
 原文链接：https://www.mathsisfun.com/numbers/geometric-mean.html
 

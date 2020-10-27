@@ -4,6 +4,7 @@ date: 2019-08-23 09:44:31
 category: 数学
 tags: 概率
 mathjax: true
+description: 如果某件事可以由$k$类不同途径之一去完成，在第一类途径中有$m1$种完成方法，在第二类途径中有$m2$，第$k$类途径中有$mk$种完成的方法，那么完成这件事总共有 $m1+m2+…+mk$种方法。如果某件事需经过$k$个步骤才能完成，做第一步有$m1$种方法，做第二件事有$m2$种方法，...，做第 $k$ 步有 $mk$ 种方法，那么完成这件事总共有 $m1×m2×…×mk$ 种方法。
 ---
 
 ![](https://images.unsplash.com/photo-1515560570411-00a0026e6086?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=10)

@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 倒渣易谛
-subtitle: 地炉茶鼎烹活火，一清足称读书者
+title: Notes
+# subtitle: 地炉茶鼎烹活火，一清足称读书者
 description: 倒渣易谛的博客,zha's blog of hexo
 keywords: 倒渣易谛,博客,zha,hexo,blog
 author: 倒渣易谛,zha
@@ -94,4 +94,4 @@ deploy:
   repo: https://github.com/zhayes/zhayes.github.io.git
   branch: master
 
-mathjax: tru
+mathjax: true

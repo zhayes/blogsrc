@@ -3,11 +3,10 @@ title: 日历插件 - ZCalendar.js
 date: 2017-12-11 13:02:15
 tags: javascript
 category: 前端
+description: 本想给公司写个专门的日历插件，结果写到中间，说不需要了，遂终！
 ---
 ![](https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=10)
 <!-- more -->
-
-
 
 ## ZCalendar.js
 本想给公司写个专门的日历插件，结果写到中间，说不需要了，遂终！

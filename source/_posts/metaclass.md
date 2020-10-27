@@ -3,11 +3,12 @@ title: 深刻理解Python中的元类(metaclass)（转）
 date: 2019-01-01 23:31:43
 category: 后台
 tags: python
+description: 在理解元类之前，你需要先掌握Python中的类。Python中类的概念借鉴于Smalltalk，这显得有些奇特。在大多数编程语言中，类就是一组用来描述如何生成一个对象的代码段。在Python中这一点仍然成立：
 ---
 ![](https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=20)
 
 原文转载地址（[http://blog.jobbole.com/21351/](http://blog.jobbole.com/21351/)）
-<!-- more -->
+
 > 译注：这是一篇在[Stack overflow](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python)上很热的帖子。提问者自称已经掌握了有关Python OOP编程中的各种概念，但始终觉得元类(metaclass)难以理解。他知道这肯定和自省有关，但仍然觉得不太明白，希望大家可以给出一些实际的例子和代码片段以帮助理解，以及在什么情况下需要进行元编程。于是e-satis同学给出了神一般的回复，该回复获得了985点的赞同点数，更有人评论说这段回复应该加入到Python的官方文档中去。而e-satis同学本人在Stack Overflow中的声望积分也高达64271分。以下就是这篇精彩的回复（提示：非常长）
 
 

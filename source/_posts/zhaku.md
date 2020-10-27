@@ -3,6 +3,7 @@ title: 写了个前端组件库 - zhaKU
 date: 2019-04-20 12:23:45
 tags: vue.js
 category: 前端
+description: 基于vue 2.x开发的UI组件库，轻量，简洁。
 ---
 ![](https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=10)
 <!-- more -->

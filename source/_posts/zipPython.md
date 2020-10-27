@@ -3,6 +3,7 @@ title: Python内置函数zip
 date: 2018-12-11 20:17:48
 category: 后台
 tags: python
+description: python内置函数里有一个zip方法。第一次看起来有点不懂，于是查了下资料，找到一篇不错的文章，便想记录分享一下。
 ---
 ![](https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=40)
 

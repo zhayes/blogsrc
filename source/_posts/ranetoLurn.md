@@ -3,6 +3,7 @@ title: Raneto配置中文搜索
 date: 2018-09-20 20:09:50
 category: 后台
 tags: nodejs
+description: 因工作需要，准备给公司搞个软件说明文档。但是这种东西我们又不想自己搭，于是就想找个开源的文档库。找啊找，于是就找到Raneto这么个东西。感觉还还不错，就决定用了。
 ---
 
 ![](http://raneto.com/images/raneto.png)

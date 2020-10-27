@@ -3,6 +3,7 @@ title: web版极简马里奥游戏
 date: 2018-12-04 12:45:31
 category: 游戏
 tags: javascript
+description: 几个星期前，在B站上看人写游戏，开启了我一些思路，于是想自己也写个mario的小游戏吧。
 ---
 ![](https://images.unsplash.com/photo-1533466336236-65dade144046?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=40)
 <!-- more -->
